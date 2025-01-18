@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkSlateBlue"
+        android:padding="15dp"
+        android:text="@string/travel_cost"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/edit_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/distance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/total_kilometers"
+            android:textColor="@color/darkGray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/edit_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/price_by_liter"
+            android:textColor="@color/darkGray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/edit_autonomy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:height="45dp"
+            android:hint="@string/autonomy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/kms_by_liter"
+            android:textColor="@color/darkGray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="@string/your_total_expense_will_be"
+            android:textAllCaps="true"
+            android:textColor="@color/darkGray" />
+
+        <TextView
+            android:id="@+id/total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/total_value"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"
+                android:text="@string/calculate"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_calculate_24"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
