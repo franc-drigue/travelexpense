@@ -24,12 +24,12 @@
         android:padding="16dp">
 
         <EditText
-            android:inputType="numberDecimal"
             android:id="@+id/edit_distance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:hint="@string/distance" />
+            android:hint="@string/distance"
+            android:inputType="numberDecimal" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,12 +41,12 @@
             android:textStyle="bold" />
 
         <EditText
-            android:inputType="numberDecimal"
             android:id="@+id/edit_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:hint="@string/price" />
+            android:hint="@string/price"
+            android:inputType="numberDecimal" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,13 +58,13 @@
             android:textStyle="bold" />
 
         <EditText
-            android:inputType="numberDecimal"
             android:id="@+id/edit_autonomy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:height="45dp"
-            android:hint="@string/autonomy" />
+            android:hint="@string/autonomy"
+            android:inputType="numberDecimal" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,24 +94,21 @@
             android:textSize="30sp" />
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginTop="32dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_calculate"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
-                android:padding="16dp"
+                android:padding="3dp"
+                android:drawableRight="@drawable/baseline_calculate_24"
                 android:text="@string/calculate"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
-
-            <ImageView
-                android:layout_width="84dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/baseline_calculate_24"/>
         </LinearLayout>
 
     </LinearLayout>
